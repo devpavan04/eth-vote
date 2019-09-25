@@ -42,9 +42,12 @@
             </tbody>
           </table>
           <hr />
+          <!-- the bellow form we allow our account to vote
+          this form has a select input which performs castVote() function on submitting -->
           <form onSubmit="App.castVote(); return false;">
             <div class="form-group">
               <label for="candidatesSelect">Select Candidate</label>
+              <!-- we will append items to the bellow select input that corresponds to each candidate in our smart contract -->
               <select class="form-control" id="candidatesSelect">
               </select>
             </div>
