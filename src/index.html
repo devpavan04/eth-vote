@@ -5,56 +5,47 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Election Results</title>
-
+  <title>Blockchain Election</title>
+  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <style>
+    body {
+      background-color: black ;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container" style="width: 650px;">
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="text-center">Election Results</h1>
-        <hr />
+        <h1 style="color: white; font-family: 'Amiri', serif;" class="text-center">Blockchain Voting <span style='font-size:40px;'>&#128499;</span></h1>
         <br />
-        <div id="loader">
-          <p class="text-center">Loading...</p>
-        </div>
         <div id="content" style="display: none;">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
+          <table style="border: solid black" class="table">
+              <tr style="background-color: #A8A7A7; border: solid black">
+                <th scope="col">No.</th>
                 <th scope="col">Name</th>
                 <th scope="col">Votes</th>
               </tr>
-            </thead>
-            <tbody id="candidatesResults">
+            <tbody style="background-color: #FFFAFA ;" id="candidatesResults">
             </tbody>
           </table>
-          <hr />
-          <!-- the bellow form we allow our account to vote
+          <!-- the bellow form we allow our account to vote,
           this form has a select input which performs castVote() function on submitting -->
           <form onSubmit="App.castVote(); return false;">
             <div class="form-group">
-              <label for="candidatesSelect">Select Candidate</label>
+              <label style="color: white" for="candidatesSelect">Select Candidate</label>
               <!-- we will append items to the bellow select input that corresponds to each candidate in our smart contract -->
-              <select class="form-control" id="candidatesSelect">
-              </select>
+              <select style="background-color: #FFFAFA; text-decoration: black; border: solid black" class="form-control" id="candidatesSelect"></select>
             </div>
-            <button type="submit" class="btn btn-primary">Vote</button>
-            <hr />
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary text-center">Vote</button>
+            </div>
+            <br>
           </form>
-          <p id="accountAddress" class="text-center"></p>
+          <p style="color: black; background-color: #FFFAFA" id="accountAddress" class="text-center"></p>
         </div>
       </div>
     </div>

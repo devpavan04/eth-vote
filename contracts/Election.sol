@@ -10,8 +10,10 @@ contract Election {
     }
     // Store accounts that have voted
     mapping(address => bool) public voters;
+
     // Store candidates
     mapping(uint => Candidate) public candidates;
+
     // Store candidates count
     uint public candidatesCount; // candidatesCount is now 0
 
@@ -32,12 +34,16 @@ contract Election {
     function vote(uint _candidateId) public {
         // Require that they haven't voted before
         require(!voters[msg.sender], "you have already casted your vote");
+
         // require a valid candidate
         require(_candidateId > 0 && _candidateId <= candidatesCount, "candidate is not valid");
+
         // Record the voter has voted
         voters[msg.sender] = true;
+
         // Update candidate vote count
         candidates[_candidateId].voteCount ++;
+
         // Trigger voted event
         emit votedEvent(_candidateId);
     }
