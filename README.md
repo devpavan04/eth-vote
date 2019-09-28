@@ -1,7 +1,7 @@
 # Blockchain Voting DAPP
 This is a Voting DAPP powered by ethereum smart contract.
 
-> This DAPP introduces to the very basic understanding of how Smart Contracts work, how they can be deployed on a local blockchain.
+This DAPP introduces to the very basic understanding of how Smart Contracts work, how they can be deployed on a local blockchain.
 
 ## What is a Blockchain?
 A blockchain, is a growing list of records, called blocks, that are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. By design, a blockchain is resistant to modification of the data. 
@@ -18,13 +18,52 @@ A smart contract is a computer protocol intended to digitally facilitate, verify
 6. Voter casts the vote using any one of his 10 accounts from the ganache using the private key(which is not recommended to be used on the real network) of that particular account.
 7. Every time a transaction is made i.e voting in this case, a new block is added to the blockchain which contains all the details of the transactions happened from the begining.
 
-> This DAPP is not deployed on the real network.
+# Dependencies
+* npm (https://nodejs.org)
+* Truffle ( https://github.com/trufflesuite/truffle)
+* Ganache (http://truffleframework.com/ganache/)
+* Metamask (https://metamask.io/)
 
-> This DAPP runs on the local blockchain on our computer.
+# Steps
+
+## 1. Clone the repo
+```
+    git clone https://github.com/devpavan04/blockchain_election.git
+
+```
+## 2. Install dependencies
+```
+    cd blockchain_election
+    npm install
+```
+### 3. Start Ganache
+Open the Ganache GUI client. This will start our local blockchain instance. 
+
+### 4. Compile & Test and Deploy Election Smart Contract
+```
+    truffle compile
+    truffle test
+    truffle migrate --reset
+```
+
+### 5. Setup Metamask
+* Open metamask extension provided by chrome
+* Connect metamask to the local Etherum blockchain provided by Ganache.
+* Import an account provided by ganache.
+
+### 6. Run the Front End Application
+```
+    npm i -g lite-server
+    lite-server
+```
+or
+```
+    npm run dev
+```
 
 # Screenshots
 
-### Open Ganache
+### Start Ganache
 ![open ganache](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-29-36.png?raw=true )
 
 ### Metamask Sign in
@@ -44,3 +83,8 @@ A smart contract is a computer protocol intended to digitally facilitate, verify
 
 ### Transaction confirmed, vote is updated!
 ![transaction confirmed, vote is updated!](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-33-37.png?raw=true)
+
+### View all the blocks and all the transaction details in ganache
+![View all the blocks and all the transaction details in ganache](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-34-36.png?raw=true)
+
+# :)
