@@ -23,3 +23,24 @@ A smart contract is a computer protocol intended to digitally facilitate, verify
 > This DAPP runs on the local blockchain on our computer.
 
 # Screenshots
+
+### Open Ganache
+![open ganache](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-29-36.png?raw=true )
+
+### Metamask Sign in
+![meta mask sign in](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-31-03.png?raw=true)
+
+### Copy account's private key to import new account
+![copy account's private key to import new account](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-31-50.png?raw=true)
+
+### Import new account
+![import new account](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-32-10.png?raw=true)
+
+### Welcome to the voting page
+![welcome to voting page](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-33-08.png?raw=true)
+
+### Confirm transaction to cast the vote
+![confirm transaction to cast the vote](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-33-29.png?raw=true)
+
+### Transaction confirmed, vote is updated!
+![transaction confirmed, vote is updated!](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-33-37.png?raw=true)
