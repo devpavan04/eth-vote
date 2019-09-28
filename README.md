@@ -37,9 +37,9 @@ A smart contract is a computer protocol intended to digitally facilitate, verify
     npm install
 ```
 ### 3. Start Ganache
-Open the Ganache GUI client. This will start our local blockchain instance. 
+* Open the Ganache GUI client. This will start our local blockchain instance. 
 
-### 4. Compile & Test and Deploy Election Smart Contract
+### 4. Compile, Test and Deploy Election Smart Contract
 ```
     truffle compile
     truffle test
@@ -84,7 +84,7 @@ or
 ### Transaction confirmed, vote is updated!
 ![transaction confirmed, vote is updated!](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-33-37.png?raw=true)
 
-### View all the blocks and all the transaction details in ganache
+### View all the transaction details and the blocks in ganache
 ![View all the blocks and all the transaction details in ganache](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-34-36.png?raw=true)
 
-# :)
+# :) 
