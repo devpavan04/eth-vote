@@ -1,4 +1,4 @@
-# Blockchain Voting DAPP
+# Blockchain Voting DAPP :link: :inbox_tray:
 This is a Voting DAPP powered by ethereum smart contract.
 
 This DAPP introduces to the very basic understanding of how Smart Contracts work, how they can be deployed on a local blockchain.
@@ -63,28 +63,26 @@ or
 
 # Screenshots
 
-### Start Ganache
+### Start Ganache :point_down:
 ![open ganache](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-29-36.png?raw=true )
 
-### Metamask Sign in
+### Metamask Sign in :point_down:
 ![meta mask sign in](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-31-03.png?raw=true)
 
-### Copy account's private key to import new account
+### Copy account's private key to import new account :point_down:
 ![copy account's private key to import new account](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-31-50.png?raw=true)
 
-### Import new account
+### Import new account :point_down:
 ![import new account](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-32-10.png?raw=true)
 
-### Welcome to the voting page
+### Welcome to the voting page :point_down:
 ![welcome to voting page](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-33-08.png?raw=true)
 
-### Confirm transaction to cast the vote
+### Confirm transaction to cast the vote :point_down:
 ![confirm transaction to cast the vote](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-33-29.png?raw=true)
 
-### Transaction confirmed, vote is updated!
+### Transaction confirmed, vote is updated! :point_down:
 ![transaction confirmed, vote is updated!](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-33-37.png?raw=true)
 
-### View all the transaction details and the blocks in ganache
+### View all the transaction details and the blocks in ganache :point_down:
 ![View all the blocks and all the transaction details in ganache](https://github.com/devpavan04/blockchain_election/blob/master/images/Screenshot%20from%202019-09-29%2003-34-36.png?raw=true)
-
-# :) 
