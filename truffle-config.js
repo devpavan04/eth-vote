@@ -11,10 +11,16 @@ module.exports = {
     //   port: 8545
     // }
   },
-  solc: {
-    optimizer: {
-      enabled: true,
-      runs: 200
+  // solc: {
+  //   optimizer: {
+  //     enabled: true,
+  //     version: "0.5.16",
+  //     runs: 200
+  //   }
+  // },
+  compilers: {
+    solc: {
+      version: "^0.5.0"
     }
-  }
+  },
 };
