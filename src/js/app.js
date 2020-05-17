@@ -10,11 +10,9 @@ App = {
 
   initWeb3: function () {
     if (typeof web3 !== 'undefined') {
-      // If a web3 instance is already provided by Meta Mask.
       App.web3Provider = web3.currentProvider;
       web3 = new Web3(web3.currentProvider);
     } else {
-      // Specify default instance if no web3 instance provided
       App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
       web3 = new Web3(App.web3Provider);
     }
@@ -27,9 +25,7 @@ App = {
       App.contracts.Election = TruffleContract(election);
       // Connect provider to interact with contract
       App.contracts.Election.setProvider(App.web3Provider);
-
       App.listenForEvents();
-
       return App.render();
     });
   },
@@ -80,7 +76,7 @@ App = {
           var voteCount = candidate[2];
 
           // Render candidate Result
-          var candidateTemplate = "<tr><th>" + id + "</th><td>" + name + "</td><td>" + voteCount + "</td></tr>"
+          var candidateTemplate = "<tr><td>" + id + "</td><td>" + name + "</td><td>" + voteCount + "</td></tr>"
           candidatesResults.append(candidateTemplate);
 
           // Render candidate selection option
@@ -90,7 +86,6 @@ App = {
       }
       return electionInstance.voters(App.account);
     }).then(function (hasVoted) {
-      // not allowing a user to volocation.reload();te again
       if (hasVoted) {
         $('form').hide();
       }
@@ -106,7 +101,7 @@ App = {
     App.contracts.Election.deployed().then(function (instance) {
       return instance.vote(candidateId, { from: App.account });
     }).then(function (_result) {
-      // Waiting for votes to update
+      // Wait till votes update
       $("#content").hide();
       location.reload();
     }).catch(function (err) {
