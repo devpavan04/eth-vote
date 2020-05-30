@@ -1,7 +1,5 @@
 # **_Voting_ _DApp_**
 
----
-
 ## Steps to run the application :
 
 ### 1. Clone the repository
@@ -39,7 +37,6 @@ npm start
 
 ### 8. Import accounts from Ganache into Metamask to make txns
 
----
 
 ## Snapshots :
 
