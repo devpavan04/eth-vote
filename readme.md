@@ -41,8 +41,8 @@ npm start
 ## Snapshots :
 
 ### Admin
-![alt text](https://github.com/devpavan04/eth-vote/blob/master/markdownImages/admin.jpg?raw=true)
+![alt text](https://github.com/devpavan04/eth-vote/blob/master/snapshots/admin.jpg?raw=true)
 
 ### Voter
 
-![alt text](https://github.com/devpavan04/eth-vote/blob/master/markdownImages/voter.jpg?raw=true)
+![alt text](https://github.com/devpavan04/eth-vote/blob/master/snapshots/voter.jpg?raw=true)
